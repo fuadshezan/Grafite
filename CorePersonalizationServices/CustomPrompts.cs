@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CorePersonalizationServices;
+﻿namespace CorePersonalizationServices;
 
 public static class CustomPrompts
 {
-   public static string CoreIdentity = @"You are a Child Health Expert.";
+	public static string CoreIdentity = @"You are a Child Health Expert.";
 
-   public static string CoreDataResource_txt = ResourceObserver.ReadFullFile(System.IO.Directory.GetCurrentDirectory() + "/tdata_minifiedjson.txt");
+	public static string CoreDataResource_txt = ResourceObserver.ReadFullFile(System.IO.Directory.GetCurrentDirectory() + "/tdata_minifiedjson.txt");
 
-   public static string CoreResponsibility = @"From now on, you will always respond in Bangla. However the Topic should be English always. Your response should be in JSON format like the one below,
+	public static string CoreResponsibility = @"From now on, you will always respond in Bangla. However the Topic should be English always. Your response should be in JSON format like the one below,
                                                 {
                                                 'Topic': 'This will be in English',
                                                 'Context': [
@@ -25,5 +19,5 @@ public static class CustomPrompts
                                                 ]
                                                 ";
 
-                                                
+
 }
